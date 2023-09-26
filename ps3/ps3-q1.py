@@ -1,0 +1,1 @@
+#Problem 1import numpy as npdelta = 0.01def f(x):    return x*(x-1)dfdx=(f(1+delta)-f(1))/(delta)print(dfdx)for i in [4, 6, 8, 10, 12, 14]:    delta = 10**(-1*i)    dfdx=(f(1+delta)-f(1))/(delta)    print(dfdx)
